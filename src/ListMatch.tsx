@@ -21,7 +21,7 @@ export default function ListMatch() {
                     <ListItem>
                         <List>
                             <ListItem>
-                                <ListItemText primary="Imbox" />
+                                <ListItemText primary="Inbox" />
                             </ListItem>
                             <ListItem>
                                 <ListItemText primary="Drafts" />
@@ -46,7 +46,7 @@ export default function ListMatch() {
                     <ListItem>
                         <List>
                             <ListItem>
-                                <ListItemText primary="Imbox" />
+                                <ListItemText primary="Inbox" />
                             </ListItem>
                             <ListItem>
                                 <ListItemText primary="Drafts" />
