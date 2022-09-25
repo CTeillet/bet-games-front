@@ -14,7 +14,6 @@
 # Reference: https://intellij-support.jetbrains.com/hc/en-us/articles/206544839
 
 # User-specific stuff
-.idea/**/workspace.xml
 .idea/**/tasks.xml
 .idea/**/usage.statistics.xml
 .idea/**/dictionaries
@@ -58,9 +57,6 @@ cmake-build-*/
 # File-based project format
 *.iws
 
-# IntelliJ
-out/
-
 # mpeltonen/sbt-idea plugin
 .idea_modules/
 
@@ -88,12 +84,10 @@ fabric.properties
 # IntelliJ project files
 .idea
 *.iml
-out
 gen
 ### Node template
 # Logs
 logs
-*.log
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
@@ -138,8 +132,6 @@ jspm_packages/
 web_modules/
 
 # TypeScript cache
-*.tsbuildinfo
-
 # Optional npm cache directory
 .npm
 
@@ -162,11 +154,9 @@ web_modules/
 .yarn-integrity
 
 # dotenv environment variables file
-.env
 .env.test
 
 # parcel-bundler cache (https://parceljs.org/)
-.cache
 .parcel-cache
 
 # Next.js build output
@@ -174,10 +164,7 @@ web_modules/
 
 # Nuxt.js build / generate output
 .nuxt
-dist
-
 # Gatsby files
-.cache/
 # Comment in the public line in if your project uses Gatsby and not Next.js
 # https://nextjs.org/blog/next-9-1#public-directory-support
 # public
@@ -214,7 +201,7 @@ Thumbs.db:encryptable
 ehthumbs.db
 ehthumbs_vista.db
 
-# Dump file
+### Dump file
 *.stackdump
 
 # Folder config file
@@ -232,7 +219,3 @@ $RECYCLE.BIN/
 
 # Windows shortcuts
 *.lnk
-
-# Ignore artifacts:
-build
-

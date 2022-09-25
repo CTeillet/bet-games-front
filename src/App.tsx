@@ -1,7 +1,7 @@
-import React from 'react';
-import './App.css';
-import MenuBar from "./MenuBar";
-import ListMatch from "./ListMatch";
+import React from 'react'
+import './App.css'
+import MenuBar from './MenuBar'
+import ListMatch from './ListMatch'
 
 function App() {
     return (
@@ -11,7 +11,7 @@ function App() {
             </header>
             <ListMatch></ListMatch>
         </div>
-    );
+    )
 }
 
-export default App;
+export default App
