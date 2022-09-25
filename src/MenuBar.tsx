@@ -1,20 +1,20 @@
-import * as React from 'react'
-import { alpha, styled } from '@mui/material/styles'
-import AppBar from '@mui/material/AppBar'
-import Box from '@mui/material/Box'
-import Toolbar from '@mui/material/Toolbar'
-import IconButton from '@mui/material/IconButton'
-import Typography from '@mui/material/Typography'
-import InputBase from '@mui/material/InputBase'
-import Badge from '@mui/material/Badge'
-import MenuItem from '@mui/material/MenuItem'
-import Menu from '@mui/material/Menu'
-import MenuIcon from '@mui/icons-material/Menu'
-import SearchIcon from '@mui/icons-material/Search'
 import AccountCircle from '@mui/icons-material/AccountCircle'
 import MailIcon from '@mui/icons-material/Mail'
-import NotificationsIcon from '@mui/icons-material/Notifications'
+import MenuIcon from '@mui/icons-material/Menu'
 import MoreIcon from '@mui/icons-material/MoreVert'
+import NotificationsIcon from '@mui/icons-material/Notifications'
+import SearchIcon from '@mui/icons-material/Search'
+import AppBar from '@mui/material/AppBar'
+import Badge from '@mui/material/Badge'
+import Box from '@mui/material/Box'
+import IconButton from '@mui/material/IconButton'
+import InputBase from '@mui/material/InputBase'
+import Menu from '@mui/material/Menu'
+import MenuItem from '@mui/material/MenuItem'
+import Toolbar from '@mui/material/Toolbar'
+import Typography from '@mui/material/Typography'
+import { alpha, styled } from '@mui/material/styles'
+import * as React from 'react'
 
 const Search = styled('div')(({ theme }) => ({
     position: 'relative',
@@ -58,8 +58,7 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
 
 export default function MenuBar() {
     const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null)
-    const [mobileMoreAnchorEl, setMobileMoreAnchorEl] =
-        React.useState<null | HTMLElement>(null)
+    const [mobileMoreAnchorEl, setMobileMoreAnchorEl] = React.useState<null | HTMLElement>(null)
 
     const isMenuOpen = Boolean(anchorEl)
     const isMobileMenuOpen = Boolean(mobileMoreAnchorEl)
@@ -121,24 +120,16 @@ export default function MenuBar() {
             onClose={handleMobileMenuClose}
         >
             <MenuItem>
-                <IconButton
-                    size="large"
-                    aria-label="show 4 new mails"
-                    color="inherit"
-                >
-                    <Badge badgeContent={4} color="error">
+                <IconButton size='large' aria-label='show 4 new mails' color='inherit'>
+                    <Badge badgeContent={4} color='error'>
                         <MailIcon />
                     </Badge>
                 </IconButton>
                 <p>Messages</p>
             </MenuItem>
             <MenuItem>
-                <IconButton
-                    size="large"
-                    aria-label="show 17 new notifications"
-                    color="inherit"
-                >
-                    <Badge badgeContent={17} color="error">
+                <IconButton size='large' aria-label='show 17 new notifications' color='inherit'>
+                    <Badge badgeContent={17} color='error'>
                         <NotificationsIcon />
                     </Badge>
                 </IconButton>
@@ -146,11 +137,11 @@ export default function MenuBar() {
             </MenuItem>
             <MenuItem onClick={handleProfileMenuOpen}>
                 <IconButton
-                    size="large"
-                    aria-label="account of current user"
-                    aria-controls="primary-search-account-menu"
-                    aria-haspopup="true"
-                    color="inherit"
+                    size='large'
+                    aria-label='account of current user'
+                    aria-controls='primary-search-account-menu'
+                    aria-haspopup='true'
+                    color='inherit'
                 >
                     <AccountCircle />
                 </IconButton>
@@ -161,21 +152,21 @@ export default function MenuBar() {
 
     return (
         <Box sx={{ flexGrow: 1 }}>
-            <AppBar position="static">
+            <AppBar position='static'>
                 <Toolbar>
                     <IconButton
-                        size="large"
-                        edge="start"
-                        color="inherit"
-                        aria-label="open drawer"
+                        size='large'
+                        edge='start'
+                        color='inherit'
+                        aria-label='open drawer'
                         sx={{ mr: 2 }}
                     >
                         <MenuIcon />
                     </IconButton>
                     <Typography
-                        variant="h6"
+                        variant='h6'
                         noWrap
-                        component="div"
+                        component='div'
                         sx={{ display: { xs: 'none', sm: 'block' } }}
                     >
                         BetGames
@@ -185,50 +176,46 @@ export default function MenuBar() {
                             <SearchIcon />
                         </SearchIconWrapper>
                         <StyledInputBase
-                            placeholder="Search…"
+                            placeholder='Search…'
                             inputProps={{ 'aria-label': 'search' }}
                         />
                     </Search>
                     <Box sx={{ flexGrow: 1 }} />
                     <Box sx={{ display: { xs: 'none', md: 'flex' } }}>
-                        <IconButton
-                            size="large"
-                            aria-label="show 4 new mails"
-                            color="inherit"
-                        >
-                            <Badge badgeContent={4} color="error">
+                        <IconButton size='large' aria-label='show 4 new mails' color='inherit'>
+                            <Badge badgeContent={4} color='error'>
                                 <MailIcon />
                             </Badge>
                         </IconButton>
                         <IconButton
-                            size="large"
-                            aria-label="show 17 new notifications"
-                            color="inherit"
+                            size='large'
+                            aria-label='show 17 new notifications'
+                            color='inherit'
                         >
-                            <Badge badgeContent={17} color="error">
+                            <Badge badgeContent={17} color='error'>
                                 <NotificationsIcon />
                             </Badge>
                         </IconButton>
                         <IconButton
-                            size="large"
-                            edge="end"
-                            aria-label="account of current user"
+                            size='large'
+                            edge='end'
+                            aria-label='account of current user'
                             aria-controls={menuId}
-                            aria-haspopup="true"
+                            aria-haspopup='true'
                             onClick={handleProfileMenuOpen}
-                            color="inherit"
+                            color='inherit'
                         >
                             <AccountCircle />
                         </IconButton>
                     </Box>
                     <Box sx={{ display: { xs: 'flex', md: 'none' } }}>
                         <IconButton
-                            size="large"
-                            aria-label="show more"
+                            size='large'
+                            aria-label='show more'
                             aria-controls={mobileMenuId}
-                            aria-haspopup="true"
+                            aria-haspopup='true'
                             onClick={handleMobileMenuOpen}
-                            color="inherit"
+                            color='inherit'
                         >
                             <MoreIcon />
                         </IconButton>

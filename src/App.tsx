@@ -1,15 +1,14 @@
-import React from 'react'
 import './App.css'
-import MenuBar from './MenuBar'
 import ListMatch from './ListMatch'
+import MenuBar from './MenuBar'
 
 function App() {
     return (
         <div>
             <header>
-                <MenuBar></MenuBar>
+                <MenuBar />
             </header>
-            <ListMatch></ListMatch>
+            <ListMatch />
         </div>
     )
 }
