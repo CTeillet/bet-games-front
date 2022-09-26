@@ -51,3 +51,7 @@ To learn React, check out the [React documentation](https://reactjs.org/).
 * Créer une page pour accéder au profil
 * Pouvoir effectuer un pari
 * Avoir une liste récapitulative de pari
+
+
+## Library
+Material UI : https://mui.com/

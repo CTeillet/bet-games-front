@@ -1,6 +1,6 @@
 import './App.css'
-import ListMatch from './ListMatch'
-import MenuBar from './MenuBar'
+import ListMatch from './home/ListMatch'
+import MenuBar from './home/MenuBar'
 
 function App() {
     return (

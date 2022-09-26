@@ -5,8 +5,8 @@ import ListItem from '@mui/material/ListItem'
 import ListItemText from '@mui/material/ListItemText'
 import Typography from '@mui/material/Typography'
 import { Component } from 'react'
-import data from './data/comingMatches.json'
-import type { GameType, LeagueType, MatchType } from './types'
+import data from '../data/comingMatches.json'
+import type { GameType, LeagueType, MatchType } from '../types'
 
 class Bet extends Component<{ team: string; cote: number }> {
     render() {
